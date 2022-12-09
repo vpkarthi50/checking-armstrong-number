@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+<body>
+
+
+<script>
+var a=153;
+var sum=0;
+var ans=a;
+	while(a>0){
+		var rem=a%10;
+		var b=rem*rem*rem;
+		 a=(a-rem)/10;
+		 sum +=b;
+	}
+	if(ans==sum){
+	console.log(sum);
+	console.log("armstrong")
+	}
+	else{
+	console.log(sum);
+	console.log("Not armstrong")
+	}
+</script>
+
+</body>
+</html>
